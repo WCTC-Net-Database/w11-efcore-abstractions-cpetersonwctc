@@ -68,6 +68,12 @@ public class GameEngine
             _player.Attack(targetableGoblin);
             _player.UseAbility(_player.Abilities.First(), targetableGoblin);
         }
+
+        if (_player is ITargetable targetablePlayer)
+        {
+            _goblin.Attack(targetablePlayer);
+        }
+        
     }
 
     private void SetupGame()

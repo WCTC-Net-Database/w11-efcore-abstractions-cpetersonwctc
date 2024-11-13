@@ -1,4 +1,5 @@
-﻿using ConsoleRpgEntities.Models.Abilities.PlayerAbilities;
+﻿using ConsoleRpgEntities.Migrations;
+using ConsoleRpgEntities.Models.Abilities.PlayerAbilities;
 using ConsoleRpgEntities.Models.Attributes;
 
 namespace ConsoleRpgEntities.Models.Characters
@@ -11,11 +12,18 @@ namespace ConsoleRpgEntities.Models.Characters
         public string Name { get; set; }
         public int Health { get; set; }
         public virtual IEnumerable<Ability> Abilities { get; set; }
-
+        public virtual Equipments? Equipments { get; set; }
         public void Attack(ITargetable target)
         {
             // Player-specific attack logic
-            Console.WriteLine($"{Name} attacks {target.Name} with a sword!");
+            if(Equipments != null && Equipments.Weapon != null)
+            {
+                Console.WriteLine($"{Name} attacks {target.Name} with {Equipments.Weapon.Name} dealing {Equipments.Weapon.Attack} damage!");
+            }
+            else {
+                Console.WriteLine($"{Name} attacks {target.Name} with fists dealing 3 damage!");
+            }
+            
         }
 
         public void UseAbility(IAbility ability, ITargetable target)

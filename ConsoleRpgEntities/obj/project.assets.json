@@ -7486,24 +7486,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mcart\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Christian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\WCTC\\NetDb-F2024\\net-db-assignment-templates-fall2024\\W11-assignment-template\\ConsoleRpgEntities\\ConsoleRpgEntities.csproj",
+      "projectUniqueName": "C:\\Users\\Christian\\Documents\\College\\DotnetDatabaseProgramming\\w11-efcore-abstractions-cpetersonwctc\\ConsoleRpgEntities\\ConsoleRpgEntities.csproj",
       "projectName": "ConsoleRpgEntities",
-      "projectPath": "D:\\Documents\\WCTC\\NetDb-F2024\\net-db-assignment-templates-fall2024\\W11-assignment-template\\ConsoleRpgEntities\\ConsoleRpgEntities.csproj",
-      "packagesPath": "C:\\Users\\mcart\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\WCTC\\NetDb-F2024\\net-db-assignment-templates-fall2024\\W11-assignment-template\\ConsoleRpgEntities\\obj\\",
+      "projectPath": "C:\\Users\\Christian\\Documents\\College\\DotnetDatabaseProgramming\\w11-efcore-abstractions-cpetersonwctc\\ConsoleRpgEntities\\ConsoleRpgEntities.csproj",
+      "packagesPath": "C:\\Users\\Christian\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Christian\\Documents\\College\\DotnetDatabaseProgramming\\w11-efcore-abstractions-cpetersonwctc\\ConsoleRpgEntities\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mcart\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Christian\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7579,12 +7574,26 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
